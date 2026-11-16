@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>濟州五日 2026/11/18–11/22（可樂旅遊）</name>
+<Style id="d1"><IconStyle><color>ff0c41c2</color><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon></IconStyle><LineStyle><color>ff0c41c2</color><width>3</width></LineStyle></Style>
+<Style id="d2"><IconStyle><color>ffed3a7c</color><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon></IconStyle><LineStyle><color>ffed3a7c</color><width>3</width></LineStyle></Style>
+<Style id="d3"><IconStyle><color>ff90740e</color><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon></IconStyle><LineStyle><color>ff90740e</color><width>3</width></LineStyle></Style>
+<Style id="d4"><IconStyle><color>ff5d18be</color><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon></IconStyle><LineStyle><color>ff5d18be</color><width>3</width></LineStyle></Style>
+<Style id="d5"><IconStyle><color>ff0f7c4d</color><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon></IconStyle><LineStyle><color>ff0f7c4d</color><width>3</width></LineStyle></Style>
+<Style id="nb"><IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/paddle/ylw-stars.png</href></Icon></IconStyle></Style>
+<Style id="base"><IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/paddle/blu-square.png</href></Icon></IconStyle></Style>
+<Folder><name>Day 1｜11/18（三） 抵達・濟州市區</name>
+<Placemark><name>濟州國際機場</name><description>ZE886 抵達（03:05 桃園起飛）</description><styleUrl>#base</styleUrl><Point><coordinates>126.4934311,33.5070772,0</coordinates></Point></Placemark>
+<Placemark><name>1. 海水溫泉汗蒸幕</name><description>推測為 龍頭岩海水樂園｜含毛巾＋專用衣服。行程表沒寫店名，這是龍頭岩旁最可能的一間，以領隊為準</description><styleUrl>#d1</styleUrl><Point><coordinates>126.5042356,33.5159611,0</coordinates></Point></Placemark>
+<Placemark><name>2. 龍頭岩</name><description>Yongduam Rock｜下車拍照</description><styleUrl>#d1</styleUrl><Point><coordinates>126.5116346,33.5157583,0</coordinates></Point></Placemark>
+<Placemark><name>3. 觀德亭（牧官衙）</name><description>Gwandeokjeong｜朝鮮時代官衙，約 30 分鐘可逛完</description><styleUrl>#d1</styleUrl><Point><coordinates>126.521532,33.513345,0</coordinates></Point></Placemark>
+<Placemark><name>4. 東門傳統市場</name><description>Dongmun Market｜停留 1～1.5 小時，晚餐自理就在這裡解決：黑豬肉、烤龍蝦、糖餅</description><styleUrl>#d1</styleUrl><Point><coordinates>126.5261829,33.5115889,0</coordinates></Point></Placemark>
+<Placemark><name>Day 1 路線（直線示意）</name><styleUrl>#d1</styleUrl><LineString><coordinates>126.4934311,33.5070772,0 126.5042356,33.5159611,0 126.5116346,33.5157583,0 126.521532,33.513345,0 126.5261829,33.5115889,0 126.3176387,33.3075638,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Day 2｜11/19（四） 神話世界全日自由</name>
+<Placemark><name>濟州神話世界 萬豪酒店</name><description>早餐後自由活動</description><styleUrl>#base</styleUrl><Point><coordinates>126.3176387,33.3075638,0</coordinates></Point></Placemark>
+<Placemark><name>1. 神話主題樂園</name><description>Shinhwa Theme Park｜含門票＋三項設施券、Cosplay 韓服 4 小時。戶外設施看天氣開放，10:00–20:00</description><styleUrl>#d2</styleUrl><Point><coordinates>126.3152053,33.3051791,0</coordinates></Point></Placemark>
+<Placemark><name>2. 商店美食街＋藍鼎廳</name><description>Shinhwa World 度假村內｜午餐在美食街自理；晚餐藍鼎廳在藍鼎酒店 G 樓，客滿改五雲閣</description><styleUrl>#d2</styleUrl><Point><coordinates>126.3195,33.3065,0</coordinates></Point></Placemark>
+<Placemark><name>Day 2 路線（直線示意）</name><styleUrl>#d2</styleUrl><LineString><coordinates>126.3176387,33.3075638,0 126.3152053,33.3051791,0 126.3195,33.3065,0</coordinates></LineString></Placemark>
+<Placemark><name>☆ 山茶花之丘</name><description>附近可順遊｜計程車約 10 分鐘。11 月下旬山茶花開始開，08:30–18:00</description><styleUrl>#nb</styleUrl><Point><coordinates>126.368298,33.2898073,0</coordinates></Point></Placemark>
+<Placemark><name>☆ Hello Kitty Island</name><description>附近可順遊｜山茶花之丘旁，09:00–17:00</description><styleUrl>#nb</styleUrl><Point><coordinates>126.352092,33.290091,0</coordinates></Point></Placemark>
+<Placemark><name>☆ 曉星岳 新別오름</name><description>附近可順遊｜車程約 15 分鐘，11 月整片芒草，爬上去約 20–30 分鐘</description><styleUrl>#nb</styleUrl><Point><coordinates>126.3576163,33.3662736,0</coordinates></Point></Placemark>
+<Placemark><name>☆ 龍頭海岸</name><description>附近可順遊｜車程約 20 分鐘，常因潮汐或風浪封閉，出發前先問</description><styleUrl>#nb</styleUrl><Point><coordinates>126.3148321,33.2316155,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Day 3｜11/20（五） 東部・城山日出峰</name>
+<Placemark><name>濟州神話世界 萬豪酒店</name><description>4 晚都住這裡。飯店不提供牙刷牙膏，記得帶泳衣</description><styleUrl>#base</styleUrl><Point><coordinates>126.3176387,33.3075638,0</coordinates></Point></Placemark>
+<Placemark><name>1. 梨湖紅白馬燈塔</name><description>Iho Tewoo Horse Lighthouse｜下車拍照</description><styleUrl>#d3</styleUrl><Point><coordinates>126.4520594,33.501757,0</coordinates></Point></Placemark>
+<Placemark><name>2. AQUA PLANET 水族館</name><description>Aqua Planet Jeju｜停留 1.2～1.5 小時</description><styleUrl>#d3</styleUrl><Point><coordinates>126.9278223,33.4327833,0</coordinates></Point></Placemark>
+<Placemark><name>3. 阿里郎『魂』跆拳武藝秀</name><description>推測為 The K Show 劇場（表善）｜約 50 分鐘，場次 09:40／11:00／14:30。劇場位置依場次時間推測</description><styleUrl>#d3</styleUrl><Point><coordinates>126.778278,33.4024111,0</coordinates></Point></Placemark>
+<Placemark><name>4. 城山日出峰</name><description>Seongsan Ilchulbong（UNESCO）｜停留 60～90 分鐘，登頂約 20–30 分鐘階梯。天候不佳改萬丈窟</description><styleUrl>#d3</styleUrl><Point><coordinates>126.9425,33.458056,0</coordinates></Point></Placemark>
+<Placemark><name>5. 史努比庭園</name><description>Snoopy Garden｜停留 1.2～1.5 小時</description><styleUrl>#d3</styleUrl><Point><coordinates>126.7783058,33.4441972,0</coordinates></Point></Placemark>
+<Placemark><name>Day 3 路線（直線示意）</name><styleUrl>#d3</styleUrl><LineString><coordinates>126.3176387,33.3075638,0 126.4520594,33.501757,0 126.9278223,33.4327833,0 126.778278,33.4024111,0 126.9425,33.458056,0 126.7783058,33.4441972,0 126.3176387,33.3075638,0</coordinates></LineString></Placemark>
+<Placemark><name>☆ 涉地可支</name><description>附近可順遊｜AQUA PLANET 隔壁，海岸步道＋白色燈塔</description><styleUrl>#nb</styleUrl><Point><coordinates>126.931111,33.4242095,0</coordinates></Point></Placemark>
+<Placemark><name>☆ 廣峙其海邊</name><description>附近可順遊｜日出峰旁，退潮時拍日出峰倒影</description><styleUrl>#nb</styleUrl><Point><coordinates>126.9246894,33.4524173,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Day 4｜11/21（六） 南部・綠茶園・夜市</name>
+<Placemark><name>濟州神話世界 萬豪酒店</name><description>4 晚都住這裡。飯店不提供牙刷牙膏，記得帶泳衣</description><styleUrl>#base</styleUrl><Point><coordinates>126.3176387,33.3075638,0</coordinates></Point></Placemark>
+<Placemark><name>1. 泰迪熊博物館＋DIY</name><description>Teddy Bear Museum（中文觀光區）｜送泰迪熊吊飾一隻。行程表寫「朝安」，中文觀光區這間最有名，以現場為準</description><styleUrl>#d4</styleUrl><Point><coordinates>126.4121736,33.2503549,0</coordinates></Point></Placemark>
+<Placemark><name>2. OSULLOC 雪綠茶園＋玻璃小屋</name><description>Osulloc Tea Museum｜送綠茶冰淇淋。隔壁是 Innisfree Jeju House</description><styleUrl>#d4</styleUrl><Point><coordinates>126.2894355,33.3059385,0</coordinates></Point></Placemark>
+<Placemark><name>3. 漢拏樹木園夜市</name><description>Arboretum Night Market｜停留 40～60 分鐘，18:00–22:00。天候不佳改中央地下商街</description><styleUrl>#d4</styleUrl><Point><coordinates>126.4881995,33.4701345,0</coordinates></Point></Placemark>
+<Placemark><name>Day 4 路線（直線示意）</name><styleUrl>#d4</styleUrl><LineString><coordinates>126.3176387,33.3075638,0 126.4121736,33.2503549,0 126.2894355,33.3059385,0 126.4881995,33.4701345,0 126.3176387,33.3075638,0</coordinates></LineString></Placemark>
+<Placemark><name>☆ Innisfree Jeju House</name><description>附近可順遊｜OSULLOC 隔壁，09:00–18:00</description><styleUrl>#nb</styleUrl><Point><coordinates>126.2904556,33.3063465,0</coordinates></Point></Placemark>
+<Placemark><name>☆ 寶石街（蓮洞）</name><description>附近可順遊｜夜市北邊約 2 公里，Day 5 也會來</description><styleUrl>#nb</styleUrl><Point><coordinates>126.4907077,33.4860985,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Day 5｜11/22（日） 西歸浦・涯月・回程</name>
+<Placemark><name>濟州神話世界 萬豪酒店</name><description>退房</description><styleUrl>#base</styleUrl><Point><coordinates>126.3176387,33.3075638,0</coordinates></Point></Placemark>
+<Placemark><name>1. 偶來 7 號小路・將軍石（獨立岩）</name><description>Oedolgae Rock｜沿海步道散步 40 分鐘～1 小時</description><styleUrl>#d5</styleUrl><Point><coordinates>126.5448343,33.239113,0</coordinates></Point></Placemark>
+<Placemark><name>2. 藥泉寺</name><description>Yakcheonsa《Island》拍攝地｜下車拍照</description><styleUrl>#d5</styleUrl><Point><coordinates>126.4494597,33.2461544,0</coordinates></Point></Placemark>
+<Placemark><name>3. 漢潭海岸散步路（涯月咖啡街）</name><description>Handam Coastal Walk｜停留 30～40 分鐘</description><styleUrl>#d5</styleUrl><Point><coordinates>126.3103796,33.4591293,0</coordinates></Point></Placemark>
+<Placemark><name>4. E-MART 超市</name><description>推測為 新濟州店｜停留 40～60 分鐘。11/22 是週日，沒遇到公休日</description><styleUrl>#d5</styleUrl><Point><coordinates>126.4803405,33.4851968,0</coordinates></Point></Placemark>
+<Placemark><name>5. 蓮洞購物商圈</name><description>Nuwemaru Street｜停留 40～60 分鐘</description><styleUrl>#d5</styleUrl><Point><coordinates>126.4907077,33.4860985,0</coordinates></Point></Placemark>
+<Placemark><name>濟州國際機場</name><description>ZE885 起飛，00:05 抵達桃園</description><styleUrl>#base</styleUrl><Point><coordinates>126.4934311,33.5070772,0</coordinates></Point></Placemark>
+<Placemark><name>Day 5 路線（直線示意）</name><styleUrl>#d5</styleUrl><LineString><coordinates>126.3176387,33.3075638,0 126.5448343,33.239113,0 126.4494597,33.2461544,0 126.3103796,33.4591293,0 126.4803405,33.4851968,0 126.4907077,33.4860985,0 126.4934311,33.5070772,0</coordinates></LineString></Placemark>
+</Folder>
+</Document></kml>
