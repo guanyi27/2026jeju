@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#ff6b2c">
+<meta name="theme-color" content="#ffffff">
 <title>濟州五日行程地圖</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<meta name="color-scheme" content="light">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;700&display=swap">
 <style>/* required styles */
 
@@ -673,41 +674,33 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <style>
 /* Layout: bright header band → day pills → map card (Google 地圖 / 行程總覽) + list; stacks on phones */
 :root{
-  --bg:#f2f9ff; --surface:#ffffff; --ink:#15213b; --muted:#5a6785; --line:#d9e6f3;
+  --bg:#ffffff; --surface:#ffffff; --ink:#1a2340; --muted:#5f6b88; --line:#e8ecf4;
   --sea:#bfe5fb; --land:#fff3d1; --land-edge:#f2b648; --road:#ff9f43;
   --accent:#ff6b2c; --pink:#ff4f8b; --sun:#ffc23d;
   --d1:#ff5a36; --d2:#8b5cf6; --d3:#00a3c4; --d4:#ff3d8b; --d5:#22b14c;
   --wish:#e08a00; --food:#10b981;
   --on:#ffffff;
+  color-scheme:light;
   --sans:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0f1729; --surface:#182239; --ink:#eef3ff; --muted:#a0b0cf; --line:#28344f;
-  --sea:#0d2a43; --land:#2a3452; --land-edge:#b9862f; --road:#c97a2b;
-  --accent:#ff8a4c; --pink:#ff6fa8; --sun:#ffd166;
-  --d1:#ff7a59; --d2:#a78bfa; --d3:#22d3ee; --d4:#ff6fa8; --d5:#4ade80;
-  --wish:#fbbf24; --food:#34d399;
-  --on:#0f1729;
-  color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0f1729; --surface:#182239; --ink:#eef3ff; --muted:#a0b0cf; --line:#28344f;
-  --sea:#0d2a43; --land:#2a3452; --land-edge:#b9862f; --road:#c97a2b;
-  --accent:#ff8a4c; --pink:#ff6fa8; --sun:#ffd166;
-  --d1:#ff7a59; --d2:#a78bfa; --d3:#22d3ee; --d4:#ff6fa8; --d5:#4ade80;
-  --wish:#fbbf24; --food:#34d399;
-  --on:#0f1729;
-  color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55}
-.band{background:linear-gradient(115deg,#ff8a1f 0%,#ff5a5f 55%,#ff3d8b 100%);color:#fff;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px 26px;position:relative;overflow:hidden}
-.band::after{content:"";position:absolute;right:-40px;top:-150px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#ffd36b 0 38%,transparent 39%);opacity:.9;pointer-events:none}
+.band{background:#fff;color:var(--ink);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:26px 14px;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+ radial-gradient(circle at 92% 22%,var(--sun) 0 34px,transparent 35px),
+ radial-gradient(circle at 84% 70%,var(--pink) 0 7px,transparent 8px),
+ radial-gradient(circle at 97% 78%,var(--d3) 0 10px,transparent 11px),
+ radial-gradient(circle at 76% 18%,var(--d5) 0 5px,transparent 6px),
+ radial-gradient(circle at 70% 82%,var(--d2) 0 4px,transparent 5px),
+ radial-gradient(circle at 3% 12%,var(--accent) 0 6px,transparent 7px);opacity:.9}
 .band .in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-end;justify-content:space-between;position:relative;z-index:1}
-h1{font-size:clamp(1.6rem,4.5vw,2.3rem);margin:0;font-weight:900;letter-spacing:.03em;text-wrap:balance}
-.band .sub{font-size:.9rem;opacity:.95;margin-top:2px}
+h1{font-size:clamp(1.7rem,5vw,2.5rem);margin:0;font-weight:900;letter-spacing:.03em;text-wrap:balance;background:linear-gradient(90deg,#ff7a1a,#ff3d8b 60%,#8b5cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.band .sub{font-size:.92rem;color:var(--muted);margin-top:2px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:4px 11px;font-size:.82rem;white-space:nowrap}
+.chip{background:color-mix(in srgb,var(--c) 10%,#fff);border:1.5px solid var(--c);color:var(--ink);border-radius:999px;padding:4px 11px;font-size:.82rem;white-space:nowrap}
+.chip b{color:var(--c)}
 .chip b{font-family:var(--mono);font-weight:700}
 .wrap{max-width:1180px;margin:0 auto;padding-block:16px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 6px;margin-bottom:12px;scrollbar-width:thin}
@@ -717,7 +710,7 @@ h1{font-size:clamp(1.6rem,4.5vw,2.3rem);margin:0;font-weight:900;letter-spacing:
 .tab:focus-visible,.stop:focus-visible,a:focus-visible,.ov:focus-visible,.seg button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
 .grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px;align-items:start}
 @media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
-.mapbox{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;position:sticky;top:max(12px,env(safe-area-inset-top,0px));box-shadow:0 10px 30px -18px rgba(21,33,59,.45)}
+.mapbox{background:var(--surface);border:2px solid var(--line);border-radius:20px;overflow:hidden;position:sticky;top:max(12px,env(safe-area-inset-top,0px));box-shadow:0 14px 34px -20px rgba(255,90,60,.55)}
 @media (max-width:860px){.mapbox{position:static}}
 .seg{display:flex;gap:4px;padding:8px;border-bottom:1px solid var(--line)}
 .seg button{flex:1;border:0;border-radius:10px;padding:8px 10px;font:inherit;font-size:.88rem;font-weight:700;background:transparent;color:var(--muted);cursor:pointer}
@@ -734,9 +727,7 @@ h1{font-size:clamp(1.6rem,4.5vw,2.3rem);margin:0;font-weight:900;letter-spacing:
 .leaflet-bar a:hover{background:var(--bg)}
 .land{fill:var(--land);fill-opacity:1;stroke:var(--land-edge);stroke-width:1.5}
 .road{fill:none;stroke:var(--road);stroke-width:2;stroke-opacity:.85}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.9)}}
-:root[data-theme="dark"] .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.9)}
-.route{fill:none;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 9}
+ .route{fill:none;stroke-width:4;stroke-linecap:round;stroke-dasharray:2 9}
 .route.d1{stroke:var(--d1)}.route.d2{stroke:var(--d2)}.route.d3{stroke:var(--d3)}.route.d4{stroke:var(--d4)}.route.d5{stroke:var(--d5)}
 .route.dim{stroke-opacity:.7}
 .pin{width:30px;height:30px;border-radius:50%;background:var(--c);color:var(--on);font:700 13px var(--mono);display:grid;place-items:center;border:3px solid var(--surface);box-shadow:0 2px 6px rgba(0,0,0,.3)}
@@ -755,13 +746,13 @@ h1{font-size:clamp(1.6rem,4.5vw,2.3rem);margin:0;font-weight:900;letter-spacing:
 .btn.primary{background:var(--c,var(--accent));color:var(--on)}
 .mapnote{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;padding:8px 12px;font-size:.78rem;color:var(--muted);border-top:1px solid var(--line)}
 .panel{display:flex;flex-direction:column;gap:12px;min-width:0}
-.dayhead{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.dayhead{background:color-mix(in srgb,var(--c) 7%,#fff);border:1.5px solid color-mix(in srgb,var(--c) 30%,#fff);border-top:6px solid var(--c);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
 .dayhead .row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between}
 .dayhead h2{margin:0;font-size:1.25rem;color:var(--c);font-weight:900}
 .dayhead h2 small{font-size:.85rem;color:var(--muted);font-weight:500;margin-left:6px}
 .meals{font-size:.84rem;color:var(--muted)}
 ol.stops{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
-.stop{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;transition:transform .12s}
+.stop{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:start;background:var(--surface);border:1.5px solid color-mix(in srgb,var(--c) 22%,#fff);border-radius:14px;padding:10px 12px;cursor:pointer;transition:transform .12s}
 .stop:hover{transform:translateY(-1px);border-color:var(--c)}
 .stop.on{border-color:var(--c);box-shadow:inset 4px 0 0 var(--c),0 6px 16px -10px var(--c)}
 .badge{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font:700 12px var(--mono);color:var(--on);background:var(--c)}
@@ -781,11 +772,11 @@ ol.stops{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;g
 .sec h3{font-size:.95rem;margin:0;font-weight:900;color:var(--c)}
 .sec span{font-size:.8rem;color:var(--muted)}
 .overview{display:flex;flex-direction:column;gap:8px}
-.ov{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;border-left:6px solid var(--c)}
+.ov{background:color-mix(in srgb,var(--c) 6%,#fff);border:1.5px solid color-mix(in srgb,var(--c) 25%,#fff);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;border-left:6px solid var(--c)}
 .ov b{display:block;color:var(--c)}
 .ov span{color:var(--muted);font-size:.84rem}
 .ov .eat{display:inline-block;margin-top:4px;font-size:.75rem;font-weight:700;color:var(--food)}
-.tips{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-top:18px}
+.tips{background:color-mix(in srgb,var(--sun) 12%,#fff);border:1.5px solid color-mix(in srgb,var(--sun) 55%,#fff);border-radius:16px;padding:14px 16px;margin-top:18px}
 .tips h2{font-size:1rem;margin:0 0 8px}
 .tips ul{margin:0;padding-left:1.2em;display:grid;gap:4px;font-size:.88rem}
 @media (prefers-reduced-motion:no-preference){.route{animation:flow 1.6s linear infinite}@keyframes flow{to{stroke-dashoffset:-22}}}
@@ -800,9 +791,9 @@ ol.stops{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;g
     <div class="sub">2026/11/18–11/22 · 4 晚都住神話世界萬豪酒店</div>
   </div>
   <div class="chips">
-    <span class="chip">集合 <b>11/18 00:35</b> 桃園 T1 易斯達 6 號櫃檯</span>
-    <span class="chip">去程 ZE886 <b>03:05→06:05</b></span>
-    <span class="chip">回程 ZE885 <b>22:40→00:05</b></span>
+    <span class="chip" style="--c:var(--accent)">集合 <b>11/18 00:35</b> 桃園 T1 易斯達 6 號櫃檯</span>
+    <span class="chip" style="--c:var(--d3)">去程 ZE886 <b>03:05→06:05</b></span>
+    <span class="chip" style="--c:var(--d4)">回程 ZE885 <b>22:40→00:05</b></span>
   </div>
 </div></div>
 
